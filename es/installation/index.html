@@ -673,7 +673,7 @@
 cd djangogirls
 python3.6 -mvenv myvenv
 source myvenv/bin/activate
-pip install django~=2.2.4
+pip install django~=3.2.10
 </code></pre><p>(nota que en la última línea usamos una virgulilla (~) seguida de un signo igual <code>~=</code>).</p>
 <h3 id="github">GitHub</h3>
 <p>Hazte una cuenta de <a href="https://github.com" target="_blank">GitHub</a>.</p>
@@ -889,14 +889,14 @@ $ virtualenv --python=python3.6 myvenv
 └───requirements.txt
 </code></pre><p>Dentro del fichero <code>djangogirls/requirements.txt</code> deberías tener el siguiente texto:</p>
 <p></p><p class="code-label">djangogirls/requirements.txt</p><p></p>
-<pre><code>Django~=2.2.4
+<pre><code>Django~=3.2.10
 </code></pre><p>Ahora, ejecuta <code>pip install -r requirements.txt</code> para instalar Django.</p>
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>(myvenv) ~$ pip install -r requirements.txt
-Collecting Django~=2.2.4 (from -r requirements.txt (line 1))
-  Downloading Django-2.2.4-py3-none-any.whl (7.1MB)
+Collecting Django~=3.2.10 (from -r requirements.txt (line 1))
+  Downloading Django-3.2.10-py3-none-any.whl (7.1MB)
 Installing collected packages: Django
-Successfully installed Django-2.2.4
+Successfully installed Django-3.2.10
 </code></pre><sec data-title="Installing Django: Windows" data-id="django_err_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Django: Windows<a class="pull-right section atTitle btn btn-default" target="django_err_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_windows"><div class="panel-body">
 <blockquote>
 <p>Si obtienes un error cuando llamas al pip en la plataforma de Windows, por favor verifica si el nombre de ruta de tu proyecto contiene espacios, acentos o caracteres especiales (por ejemplo, <code>C:\Usuarios\NombreUsuario\djangogirls</code>). Si los tiene, utiliza otro en su lugar sin espacios, acentos o caracteres especiales (sugerencia: <code>C:\djangogirls</code>). Crea un nuevo virtualenv en el nuevo directorio, luego borra el viejo y trata de escribir el comando anterior otra vez. (Moviendo el directorio virtualenv no funcionará debido a que usa rutas absolutas.)</p>
@@ -1016,7 +1016,7 @@ Successfully installed Django-2.2.4
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Instalación","level":"1.2","depth":1,"next":{"title":"Instalación (chromebook)","level":"1.3","depth":1,"path":"chromebook_setup/README.md","ref":"chromebook_setup/README.md","articles":[]},"previous":{"title":"Introducción","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"es","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"installation/README.md","mtime":"2021-12-28T00:56:17.235Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-28T00:56:35.596Z"},"basePath":"..","book":{"language":"es"}});
+            gitbook.page.hasChanged({"page":{"title":"Instalación","level":"1.2","depth":1,"next":{"title":"Instalación (chromebook)","level":"1.3","depth":1,"path":"chromebook_setup/README.md","ref":"chromebook_setup/README.md","articles":[]},"previous":{"title":"Introducción","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"3.2.10"},"language":"es","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"installation/README.md","mtime":"2022-01-14T17:01:26.803Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2022-01-14T17:01:47.367Z"},"basePath":"..","book":{"language":"es"}});
         });
     </script>
 </div>
