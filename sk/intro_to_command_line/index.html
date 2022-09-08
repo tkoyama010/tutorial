@@ -146,6 +146,116 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    Príkazový riadok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    Editor kódu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    Virtuálne prostredie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github-account">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere-account">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
@@ -166,7 +276,7 @@
                 <a href="../how_the_internet_works/">
             
                     
-                    Ako funguje Internet
+                    Ako funguje internet
             
                 </a>
             
@@ -244,7 +354,7 @@
                 <a href="../django_installation/">
             
                     
-                    Inštalácia Django
+                    Inštalácia Djanga
             
                 </a>
             
@@ -309,7 +419,7 @@
                 <a href="../django_urls/">
             
                     
-                    Django url
+                    Django URL
             
                 </a>
             
@@ -322,7 +432,7 @@
                 <a href="../django_views/">
             
                     
-                    Django views - čas tvoriť!
+                    Django viewy - čas tvoriť!
             
                 </a>
             
@@ -348,7 +458,7 @@
                 <a href="../django_orm/">
             
                     
-                    Django ORM (tvorba dotazov)
+                    Django ORM (QuerySety)
             
                 </a>
             
@@ -374,7 +484,7 @@
                 <a href="../django_templates/">
             
                     
-                    Šablóny Django
+                    Django šablóny
             
                 </a>
             
@@ -387,7 +497,7 @@
                 <a href="../css/">
             
                     
-                    CSS - skrášli to
+                    CSS - skrášlime to
             
                 </a>
             
@@ -426,7 +536,7 @@
                 <a href="../django_forms/">
             
                     
-                    Formuláre Django
+                    Django formuláre
             
                 </a>
             
@@ -512,48 +622,56 @@
                                 
                                 <h1 id="úvod-do-rozhrania-príkazového-riadku">Úvod do rozhrania príkazového riadku</h1>
 <blockquote>
-<p>Pre čitateľov doma: Táto kapitola je spracovaná v <a href="https://www.youtube.com/watch?v=jvZLWhkzX-8" target="_blank">Your new friend: Command Line</a> videu.</p>
+<p>Pre čitateľky a čitateľov doma: Táto kapitola je spracovaná v <a href="https://www.youtube.com/watch?v=jvZLWhkzX-8" target="_blank">How the Internet Works</a> videu.</p>
 </blockquote>
-<p>Je to vzrušujúce, však? Už o pár minút napíšeš svoj prvý riadok kódu! :)</p>
-<p><strong>Dovoľ nám predstaviť ti tvojho nového priateľa: príkazový riadok!</strong></p>
-<p>Nasledujúce kroky ti ukážu ako používať tú čiernu obrzovku, čo používajú všetci hackeri. Zo začiatku môže vyzerať trochu desivo, ale je to naozaj len riadok, čo čaká na tvoje príkazy.</p>
+<p>Je to vzrušujúce, však?! Už o pár minút napíšeš svoj prvý riadok kódu! :)</p>
+<p><strong>Dovoľ nám predstaviť ti tvojho nového kamaráta: príkazový riadok!</strong></p>
+<p>Nasledujúce kroky ti ukážu, ako používať tú čiernu obrzovku, čo používajú všetci hackeri a hackerky. Zo začiatku môže vyzerať trochu desivo, ale je to naozaj len okno, čo čaká na tvoje príkazy.</p>
 <blockquote>
-<p><strong>Poznámka</strong> Prosím všimni si, že v knižke používame výrazy &apos;adresár&apos; aj &apos;zložka&apos; zameniteľne, no ich význam je rovnaký.</p>
+<p><strong>Poznámka</strong> Prosím, maj na pamäti, že v tomto texte používame výrazy &quot;adresár&quot;, &quot;zložka&quot; a &quot;priečinok&quot; zameniteľne - ich význam je rovnaký.</p>
 </blockquote>
 <h2 id="čo-je-to-príkazový-riadok">Čo je to príkazový riadok?</h2>
-<p>Okno, ktoré sa zvyčajne nazýva <strong>príkazový riadok</strong> alebo <strong>rozhranie príkazového riadku</strong> je textová aplikácia na prehliadanie, spracovanie a manipuláciu so súbormi v tvojom počítači. V podstate je to ako Prieskumník vo Windowse alebo Finder na Macu, akurát bez grafického rozhrania. Ďalšie názvy pre príkazový riadok môžu byť: <em>cmd</em>, <em>CLI</em>, <em>prompt</em>, <em>konzola</em> alebo <em>terminál</em>.</p>
-<h2 id="otvor-rozhranie-príkazového-riadku">Otvor rozhranie príkazového riadku</h2>
+<p>Okno, ktoré sa zvyčajne nazýva <strong>príkazový riadok</strong> (command line) alebo <strong>rozhranie príkazového riadku</strong> (command line interface) je textová aplikácia na prehliadanie, spracúvanie a manipuláciu so súbormi v tvojom počítači. V podstate je to ako Prieskumník vo Windowse alebo Finder na Macu, akurát bez grafického rozhrania. Ďalšie názvy pre príkazový riadok môžu byť: <em>cmd</em>, <em>CLI</em>, <em>prompt</em>, <em>konzola</em> alebo <em>terminál</em>.</p>
+<h2 id="otvorenie-rozhranie-príkazového-riadku">Otvorenie rozhranie príkazového riadku</h2>
 <p>Aby sme mohli trochu experimentovať, musíme najskôr rozhranie príkazového riadku otvoriť.</p>
 <sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt"><div class="panel-body">
-<p>Prejdite na Štart menu → Systém Windows → Príkazový riadok.</p>
-<blockquote>
-<p>V starších verziách systému Windows, pozrite v Štart menu → Všetky programy → Príslušenstvo → Príkazový riadok.</p>
-</blockquote>
+<p>V závislosti od tvojej verzie Windowsu a tvojej klávesnice by jedna z týchto možností mala otvoriť príkazové okno (možno budeš musieť trochu experimentovať, ale nemusíš skúšať všetky tieto možnosti):</p>
+<ul>
+<li>Prejdi do ponuky Štart alebo na plochu a do vyhľadávacieho poľa zadaj &quot;Príkazový riadok&quot; alebo &quot;Command Prompt&quot;.</li>
+<li>Prejdi na Štart menu → Systém Windows → Príkazový riadok.</li>
+<li>Choď na menu Štart → Všetky programy → Príslušenstvo → Príkazový riadok.</li>
+<li>Prejdi na plochu, podrž myš v ľavom dolnom rohu obrazovky a klikni na šípku nadol, ktorá sa zobrazí (na dotykovej obrazovke namiesto toho rýchlo prejdi prstom z dolnej časti obrazovky nahor). Mal by sa ti zobraziť zoznam aplikácií. Klikni na príkazový riadok (Command Prompt) v sekcii Windows System.</li>
+<li>Podrž špeciálnu klávesu Windows na klávesnici a stlač klávesu &quot;X&quot;. Vyber &quot;Príkazový riadok&quot; z kontextového menu.</li>
+<li>Podrž klávesu Windows a stlač tlačidlo &quot;R&quot;, kým sa ti nezobrazí okno &quot;Run&quot;. Do poľa zadaj &quot;cmd&quot; a klikni na tlačidlo OK.</li>
+</ul>
+<p><img src="../python_installation/images/windows-plus-r.png" alt="Zadaj &quot;cmd&quot; v okne &quot;Run&quot;"></p>
+<p>Neskôr v tutoriáli budeš potrebovať mať otvorené dve príkazové okná súčasne. Avšak na niektorých verziách Windowsu ak už máš otvorené jedno okno príkazového riadku a pokúsiš sa otvoriť druhé rovnakým spôsobom, len ťa to presmeruje na to, ktoré už máš otvorené. Vyskúšaj si to na svojom počítači! Ak dostaneš len svoje už existujúce príkazové okno, skús nové otvoriť použitím iného spôsobu zo zoznamu vyššie. Aspoň jeden z nich by ti mal otvoriť nové okno.</p>
 </div></div></div></sec>
 <sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: OS X<a class="pull-right section atTitle btn btn-default" target="OSX_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_prompt"><div class="panel-body">
 <p>Choď do Aplikácie → Nástroje → Terminál.</p>
 </div></div></div></sec>
 <sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: Linux<a class="pull-right section atTitle btn btn-default" target="linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="linux_prompt"><div class="panel-body">
-<p>Pravdepodobne ho nájdeš pod Aplikácie → Príslušenstvo → Terminál, ale to závisí na tvojom systéme. Ak to tam nie je, tak si to jednoducho vygoogli. :)</p>
+<p>Cesta je pravdepodobne Aplikácie → Príslušenstvo → Terminál alebo Aplikácie → Systém → Terminál, ale závisí to od tvojho systému. Ak to tam nie je, skús si to vygoogliť. :)</p>
 </div></div></div></sec>
 <h2 id="príkazový-riadok">Príkazový riadok</h2>
 <p>Teraz by si už mala vidieť biele alebo čierne okno, ktoré čaká na tvoje príkazy.</p>
 <sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Prompt: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_prompt"><div class="panel-body">
-<p>Ak si na Macu alebo Linuxe, zrejme uvidíš <code>$</code>, presne takto:</p>
+<p>Ak si na Macu alebo Linuxe, zrejme uvidíš <code>$</code>. Takto:</p>
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>$
 </code></pre></div></div></div></sec>
 <sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Prompt: Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt2"><div class="panel-body">
-<p>Na Windowse je to znak <code>&gt;</code>, takýto:</p>
+<p>Na Windowse pravdepodobne vidíš <code>&gt;</code>. Takto:</p>
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>&gt;
-</code></pre></div></div></div></sec>
-<p>Každý príkaz budeš zadávať za tento znak a jednu medzeru. Ty to ale písať nemusíš, urobí to za teba tvoj počítač. :)</p>
+</code></pre><p>Pozri na sekciu o Linuxe priamo nad touto - niečo také uvidíš neskôr, keď sa v tutoriáli dostaneme k časti o PythonAnywhere.</p>
+</div></div></div></sec>
+<p>Pred každým príkazom budeš vidieť <code>$</code> alebo <code>&gt;</code> a jednu medzeru, ale tie nepíš. Tvoj počítač to spraví za teba. :)</p>
 <blockquote>
-<p>Len krátka poznámka: v tvojom prípade môže tam byť pred niečo ako <code>C:\Users\ola&gt;</code> alebo <code>Olas-MacBook-Air:~ ola$</code> a to je úplne v poriadku.</p>
+<p>Len malá poznámka: možno máš pred znakom promptu niečo ako <code>C:\Users\ola&gt;</code> alebo <code>Olas-MacBook-Air:~ ola$</code>. To je úplne v poriadku.</p>
 </blockquote>
-<p>Časť po a vrátane <code>$</code> alebo <code>&gt;</code> sa nazýva <em>príkazový riadok</em>, alebo <em>prompt</em> skrátene. Je to miesto kde zadávaš príkazy.</p>
-<p>V tutoriále, keď chceme, aby si zadala príkaz, použijeme <code>$</code> alebo <code>&gt;</code>, a občas aj väčšmej doľava. Môžeš ignorovať ľavú čast a zadaj príkaz, ktorý sa začína po prompte.</p>
+<p>Časť od začiatku riadku po <code>$</code> alebo <code>&gt;</code> (vrátane) sa nazýva <em>prompt</em>. Prompt ťa nabáda (angl. prompt), aby si niečo napísala.</p>
+<p>Keď od teba budeme v tomto tutoriáli chcieť, aby si napísala príkaz, budeme v príkladoch písať aj <code>$</code> alebo <code>&gt;</code>, alebo prípadne aj viac vecí na začiatku riadku. Túto celú ľavú časť ignoruj a napíš len príkaz, ktorý sa začína po prompte.</p>
 <h2 id="tvoj-prvý-príkaz-hurá">Tvoj prvý príkaz (Hurá!)</h2>
 <p>Začnime tým, že zadáme nasledovný príkaz:</p>
 <sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Your first command: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_whoami"><div class="panel-body">
@@ -564,24 +682,24 @@
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>&gt; whoami
 </code></pre></div></div></div></sec>
-<p>A stlač <code>enter</code>. Toto je výsledok:</p>
+<p>A potom stlač <code>enter</code>. Toto je výsledok:</p>
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>$ whoami
 olasitarska
 </code></pre><p>Ako vidíš, počítač práve vypísal tvoje užívateľské meno. Milé, nie? :)</p>
 <blockquote>
-<p>Skús každý príkaz napísať, nielen kopírovať. Viac si tak zapamätáš!</p>
+<p>Skús každý príkaz napísať, nielen skopírovať. Viac si tak zapamätáš!</p>
 </blockquote>
 <h2 id="základy">Základy</h2>
 <p>Každý operačný systém má trochu iné príkazy pre príkazový riadok, takže postupuj podľa inštrukcií pre tvoj operačný systém. Tak čo, vyskúšame to?</p>
-<h3 id="aktuálny-adresár">Aktuálny adresár</h3>
+<h3 id="aktuálny-priečinok">Aktuálny priečinok</h3>
 <p>Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento príkaz a stlač <code>enter</code>:</p>
 <sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Current directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>$ pwd
 /Users/olasitarska
 </code></pre><blockquote>
-<p>Poznámka: &apos;pwd&apos; je skratka pre &apos;print working directory&apos;.</p>
+<p>Poznámka: &apos;pwd&apos; je skratka pre &apos;print working directory&apos; (vypíš pracovný adresár).</p>
 </blockquote>
 </div></div></div></sec>
 <sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Current directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd"><div class="panel-body">
@@ -589,13 +707,21 @@ olasitarska
 <pre><code>&gt; cd
 C:\Users\olasitarska
 </code></pre><blockquote>
-<p>Poznámka: &apos;cd&apos; znamená &apos;change directory&apos;, teda zmena priečinku. V PowerShell môžeš použiť pwd tak ako na Linuxe alebo Mac OS X.</p>
+<p>Poznámka: &apos;cd&apos; znamená &apos;change directory&apos;, teda zmeň priečinok. V PowerShelli môžeš použiť pwd rovnako ako na Linuxe alebo Mac OS X.</p>
 </blockquote>
 </div></div></div></sec>
-<p>Na svojom stroji pravdepodobne uvidíš niečo takéto. Keď otvoríš príkazový riadok, zvyčajne začneš vo svojom domovskom adresári.</p>
+<p>Na svojom stroji pravdepodobne uvidíš niečo takéto. Keď otvoríš príkazový riadok, zvyčajne začneš vo svojom domovskom priečinku.</p>
 <hr>
-<h3 id="zoznam-súborov-a-adresárov">Zoznam súborov a adresárov</h3>
-<p>Tak čo je v ňom? Bolo by super zistiť to. Pozrime sa na to:</p>
+<h3 id="ako-sa-dozvedieť-viac-o-príkaze">Ako sa dozvedieť viac o príkaze</h3>
+<p>Mnoho príkazov, ktoré píšeš do konzoly, má zabudovanú nápovedu (help), ktorú si môžeš nechať zobraziť! Napríklad, ak sa chceš dozvedieť viac o príkaze z predošlej časti:</p>
+<sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Command help: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_man"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_man"><div class="panel-body">
+<p>OS X a Linux majú príkaz <code>man</code>, ktorý ti zobrazí nápovedu k iným príkazom. Skús <code>man pwd</code> a pozri, čo ti vypíše, alebo napíš <code>man</code> v kombinácii s inými príkazmi, aby sa ti zobrazila ich nápoveda. Výstup príkazu <code>man</code> má zvyčajne niekoľko strán. Na listovanie použi medzerník a stlačením klávesy <code>q</code> nápovedu ukončíš.</p>
+</div></div></div></sec>
+<sec data-title="Command Help: Windows" data-id="windows_help" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Command Help: Windows<a class="pull-right section atTitle btn btn-default" target="windows_help"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_help"><div class="panel-body">
+<p>Keď pripojíš <code>/?</code> na koniec príkazu, vo väčšine prípadov tiež dostaneš nápovedu. Je možné, že budeš musieť trochu poscrollovať vo svojom príkazovom okne, aby si si ju mohla celú prečítať. Skús <code>cd /?</code>.</p>
+</div></div></div></sec>
+<h3 id="zoznam-súborov-a-priečinkov">Zoznam súborov a priečinkov</h3>
+<p>Bolo by zaujímavé zistiť, čo taký priečinok obsahuje. Pozrime sa na to:</p>
 <sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>List files and directories: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>$ ls
@@ -609,26 +735,31 @@ Music
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>&gt; dir
  Directory of C:\Users\olasitarska
-05/08/2014 07:28 PM &lt;DIR&gt;      Applications
-05/08/2014 07:28 PM &lt;DIR&gt;      Desktop
-05/08/2014 07:28 PM &lt;DIR&gt;      Downloads
-05/08/2014 07:28 PM &lt;DIR&gt;      Music
+05/08/2020 07:28 PM &lt;DIR&gt;      Applications
+05/08/2020 07:28 PM &lt;DIR&gt;      Desktop
+05/08/2020 07:28 PM &lt;DIR&gt;      Downloads
+05/08/2020 07:28 PM &lt;DIR&gt;      Music
 ...
 </code></pre><blockquote>
-<p>Poznámka: V powershelli môžeš použiť aj &apos;ls&apos; ako na Linuxe alebo Mac OS X. </p></blockquote></div></div></div></sec><p></p>
+<p>Poznámka: V PowerShelli môžeš použiť aj &apos;ls&apos; rovnako ako na Linuxe alebo Mac OS X.</p></blockquote></div></div></div></sec><p></p>
 
 <hr>
-<h3 id="zmena-aktuálneho-adresára">Zmena aktuálneho adresára</h3>
-<p>Teraz prejdime do adresára Plochy:</p>
-<sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_move_to"><div class="panel-body">
+<h3 id="zmena-aktuálneho-priečinku">Zmena aktuálneho priečinku</h3>
+<p>Teraz prejdime do priečinku, kde je naša plocha:</p>
+<sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: OS X<a class="pull-right section atTitle btn btn-default" target="OSX_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_move_to"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>$ cd Desktop
 </code></pre></div></div></div></sec>
+<sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: Linux<a class="pull-right section atTitle btn btn-default" target="Linux_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="Linux_move_to"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd Desktop
+</code></pre><p>Tu je dobré poznamenať, že názov &quot;Desktop&quot; môže byť preložený do jazyka, ktorý máš nastavený vo svojom linuxovom konte. V takom prípade budeš musieť zmeniť <code>Desktop</code> na toto preložené meno, napríklad <code>Schreibtisch</code> v nemčine.</p>
+</div></div></div></sec>
 <sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_move_to"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>&gt; cd Desktop
 </code></pre></div></div></div></sec>
-<p>Skontroluj, či sa adresár skutočne zmenil:</p>
+<p>Skontroluj, či sa priečinok skutočne zmenil:</p>
 <sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check if changed: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd2"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>$ pwd
@@ -641,10 +772,10 @@ C:\Users\olasitarska\Desktop
 </code></pre></div></div></div></sec>
 <p>A je to!</p>
 <blockquote>
-<p>Profi tip: ak napíšeš <code>cd D</code> a potom stlačíš <code>tab</code>, príkazový riadok automaticky doplní zvyšok názvu, takže adresáre môžeš prechádzať rýchlejšie. Ak na &quot;D&quot; začína viac ako jeden adresár, stlač <code>tab</code> dvakrát a dostaneš zoznam možností.</p>
+<p>Profi tip: ak napíšeš <code>cd D</code> a potom stlačíš klávesu <code>Tab</code>, príkazový riadok automaticky doplní zvyšok názvu, takže priečinky môžeš prechádzať rýchlejšie. Ak na &quot;D&quot; začína viac ako jeden priečinok, stlač <code>Tab</code> dvakrát a dostaneš zoznam možností.</p>
 </blockquote>
 <hr>
-<h3 id="vytvoriť-adresár">Vytvoriť adresár</h3>
+<h3 id="vytvorenie-priečinku">Vytvorenie priečinku</h3>
 <p>Čo takto vytvoriť pokusný adresár na ploche? Urobíš to takto:</p>
 <sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_mkdir"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
@@ -652,9 +783,9 @@ C:\Users\olasitarska\Desktop
 </code></pre></div></div></div></sec>
 <sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_mkdir"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
-<pre><code>&gt; mkdir practice
+<pre><code>&gt; mkdir pokus
 </code></pre></div></div></div></sec>
-<p>Tento príkazík vytvorí adresár s názvom <code>pokus</code> na tvojej ploche. Či je adresár naozaj tam môžeš zistiť jednoducho pohľadom na Plochu alebo spustením príkazu <code>ls</code> alebo <code>dir</code>! Vyskúšaj to. :)</p>
+<p>Tento príkazík vytvorí adresár s názvom <code>pokus</code> na tvojej ploche. Či je priečinok naozaj tam, môžeš zistiť jednoducho pohľadom na plochu alebo spustením príkazu <code>ls</code> alebo <code>dir</code>! Skús si to. :)</p>
 <blockquote>
 <p>Profi tip: ak sa ti nechce vypisovať stále dookola tie isté príkazy, skús sa stlačením <code>šípky hore</code> a <code>šípky dole</code> vrátiť k nedávno použitým príkazom.</p>
 </blockquote>
@@ -671,16 +802,16 @@ test
 </code></pre></div></div></div></sec>
 <sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exercise solution: Windows<a class="pull-right section atTitle btn btn-default" target="windows_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_test_dir"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
-<pre><code>&gt; cd practice
+<pre><code>&gt; cd pokus
 &gt; mkdir test
 &gt; dir
-03/20/2016 11:05 AM &lt;DIR&gt;      test
+05/08/2020 07:28 PM &lt;DIR&gt;      test
 </code></pre></div></div></div></sec>
 <p>Gratulujeme! :)</p>
 <hr>
 <h3 id="upratovanie">Upratovanie</h3>
-<p>Nechceme po sebe nechať neporiadok, takže odstránime všetko, čo sme doteraz vytvorili.</p>
-<p>Najkôr sa musíme vrátiť späť na Plochu:</p>
+<p>Nechceme po sebe nechať neporiadok, tak poďme odstrániť všetko, čo sme doteraz vytvorili.</p>
+<p>Najskôr sa musíme vrátiť späť na plochu:</p>
 <sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Clean up: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_back"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>$ cd ..
@@ -689,7 +820,7 @@ test
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>&gt; cd ..
 </code></pre></div></div></div></sec>
-<p>Pomocou <code>..</code> s príkazom <code>cd</code> zmeníš svoj aktuálny adresár na rodičovský adresár (to je ten adresár, v ktorom sa nachádza tvoj aktuálny adresár).</p>
+<p>Pomocou <code>..</code> s príkazom <code>cd</code> zmeníš svoj aktuálny priečinok na rodičovský priečinok (čiže priečinok, ktorý obsahuje tvoj súčasný priečinok).</p>
 <p>Skontroluj, kde sa nachádzaš:</p>
 <sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check location: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd3"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
@@ -701,9 +832,9 @@ test
 <pre><code>&gt; cd
 C:\Users\olasitarska\Desktop
 </code></pre></div></div></div></sec>
-<p>Je na čase zmazať adresár <code>pokus</code>:</p>
+<p>Je načase zmazať priečinok <code>pokus</code>:</p>
 <blockquote>
-<p><strong>Pozor</strong>: mazanie súborov pomocou <code>del</code> <code>rmdir</code> alebo <code>rm</code> je neodvolateľné, teda <em>odstránené súbory budú navždy odtranené</em>! Takže s týmito príkazmi buď opatrná.</p>
+<p><strong>Pozor</strong>: mazanie súborov pomocou <code>del</code>, <code>rmdir</code> alebo <code>rm</code> je neodvolateľné, teda <em>odstránené súbory budú odstránené navždy</em>! Takže s týmito príkazmi buď opatrná.</p>
 </blockquote>
 <sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Delete directory: Windows Powershell, OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_rm"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_rm"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
@@ -711,10 +842,10 @@ C:\Users\olasitarska\Desktop
 </code></pre></div></div></div></sec>
 <sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Delete directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="windows_rmdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_rmdir"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
-<pre><code>&gt; rmdir /S pous
+<pre><code>&gt; rmdir /S pokus
 pokus, Are you sure &lt;Y/N&gt;? Y
 </code></pre></div></div></div></sec>
-<p>Hotovo! Uistime sa, či je to naozaj vymazané:</p>
+<p>Hotovo! Uistime sa, či je naozaj vymazaný:</p>
 <sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check deletion: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls2"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>$ ls
@@ -724,7 +855,7 @@ pokus, Are you sure &lt;Y/N&gt;? Y
 <pre><code>&gt; dir
 </code></pre></div></div></div></sec>
 <h3 id="ukončenie">Ukončenie</h3>
-<p>Nateraz je to všetko! Môžeš pokojne zatvoriť príkazový riadok. Urobme to hackersky, dobre? :)</p>
+<p>Nateraz je to všetko! Môžeš pokojne zatvoriť príkazový riadok. Urobme to hackersky, čo povieš? :)</p>
 <sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exit: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_exit"><div class="panel-body">
 <p></p><p class="code-label">command-line</p><p></p>
 <pre><code>$ exit
@@ -755,25 +886,25 @@ pokus, Are you sure &lt;Y/N&gt;? Y
 <tr>
 <td>cd</td>
 <td>cd</td>
-<td>zmení adresár</td>
+<td>zmení priečinok</td>
 <td><strong>cd test</strong></td>
 </tr>
 <tr>
 <td>cd</td>
 <td>pwd</td>
-<td>ukáž akutuálny adresár</td>
+<td>ukáže aktuálny priečinok</td>
 <td><strong>cd</strong> (Windows) alebo <strong>pwd</strong> (Mac OS / Linux)</td>
 </tr>
 <tr>
 <td>dir</td>
 <td>ls</td>
-<td>vypíše zoznam adresárov/súborov</td>
+<td>vypíše zoznam priečinkov/súborov</td>
 <td><strong>dir</strong></td>
 </tr>
 <tr>
 <td>copy</td>
 <td>cp</td>
-<td>kopíruje súbor</td>
+<td>skopíruje súbor</td>
 <td><strong>copy c:\test\test.txt c:\windows\test.txt</strong></td>
 </tr>
 <tr>
@@ -785,20 +916,26 @@ pokus, Are you sure &lt;Y/N&gt;? Y
 <tr>
 <td>mkdir</td>
 <td>mkdir</td>
-<td>vytvorí nový adresár</td>
+<td>vytvorí nový priečinok</td>
 <td><strong>mkdir testdirectory</strong></td>
 </tr>
 <tr>
-<td>del</td>
+<td>rmdir (alebo del)</td>
 <td>rm</td>
-<td>vymazať súbor</td>
+<td>odstráni súbor</td>
 <td><strong>del c:\test\test.txt</strong></td>
 </tr>
 <tr>
 <td>rmdir /S</td>
 <td>rm -r</td>
-<td>odstráni adresár/súbor</td>
+<td>odstráni priečinok</td>
 <td><strong>rm -r testdirectory</strong></td>
+</tr>
+<tr>
+<td>[CMD] /?</td>
+<td>man [CMD]</td>
+<td>ponúkne nápovedu k príkazu</td>
+<td><strong>cd /?</strong> (Windows) alebo <strong>man cd</strong> (Mac OS / Linux)</td>
 </tr>
 </tbody>
 </table>
@@ -833,7 +970,7 @@ pokus, Are you sure &lt;Y/N&gt;? Y
 
             
                 
-                <a href="../how_the_internet_works/" class="navigation navigation-prev " aria-label="Previous page: Ako funguje Internet">
+                <a href="../how_the_internet_works/" class="navigation navigation-prev " aria-label="Previous page: Ako funguje internet">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -849,7 +986,7 @@ pokus, Are you sure &lt;Y/N&gt;? Y
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Úvod do príkazového riadku","level":"1.5","depth":1,"next":{"title":"Inštalácia Pythonu","level":"1.6","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"previous":{"title":"Ako funguje Internet","level":"1.4","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"3.2.10"},"language":"sk","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"intro_to_command_line/README.md","mtime":"2022-08-24T17:59:19.443Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-08-24T17:59:34.673Z"},"basePath":"..","book":{"language":"sk"}});
+            gitbook.page.hasChanged({"page":{"title":"Úvod do príkazového riadku","level":"1.5","depth":1,"next":{"title":"Inštalácia Pythonu","level":"1.6","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"previous":{"title":"Ako funguje internet","level":"1.4","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"3.2.10"},"language":"sk","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"intro_to_command_line/README.md","mtime":"2022-09-08T18:05:29.711Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-09-08T18:05:42.379Z"},"basePath":"..","book":{"language":"sk"}});
         });
     </script>
 </div>
